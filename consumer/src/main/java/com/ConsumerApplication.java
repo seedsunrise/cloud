@@ -1,4 +1,4 @@
-package org.consumer;
+package com;
 
 
 import org.springframework.boot.SpringApplication;
@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com")
 @EnableEurekaClient
 @EnableZuulProxy
 @EnableFeignClients

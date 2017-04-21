@@ -2,7 +2,7 @@ server:
   port: 8800
 spring:
   application:
-    name: servicex
+    name: cloud-client
 eureka:
   instance:
     hostname: localhost
